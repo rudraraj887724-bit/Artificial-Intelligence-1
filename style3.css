@@ -1,0 +1,140 @@
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.8); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* Navigation */
+nav {
+    background: #0f2027;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* Animated Logo */
+.logo {
+    font-size: 22px;
+    color: #00c6ff;
+    font-weight: bold;
+    margin-bottom: 8px;
+    animation: zoom 1.5s ease;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    color: white;
+    text-align: center;
+    max-width: 700px;
+    animation: slideDown 1.3s ease;
+}
+
+.overlay h1 {
+    font-size: 50px;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: white;
+    color: #243b55;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+/* Purpose */
+.purpose {
+    background: white;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    animation: zoom 1.2s ease;
+}
+
+/* Cards */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 260px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #0f2027;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}

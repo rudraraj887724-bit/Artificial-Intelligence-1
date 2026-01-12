@@ -1,0 +1,104 @@
+/* Contact Section */
+.contact-section {
+    background-color: #eef2f7;
+    padding: 60px 20px;
+    text-align: center;
+    animation: zoom 1.2s ease;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #141e30;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 1.5s ease;
+}
+
+/* Form Group */
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    background: transparent;
+}
+
+/* Floating Label Effect */
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Move label when input is focused or has text */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    color: #00c6ff;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+}
+
+/* Input Focus Animation */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0,198,255,0.3);
+}
+
+/* Submit Button */
+.contact-form .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 30px;
+    background: #00c6ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #007bb5;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .contact-form {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,52 @@
+/* References Section */
+.references-section {
+    background-color: #eef2f7;
+    padding: 60px 20px;
+    text-align: center;
+    animation: zoom 1.2s ease;
+}
+
+.references-section h2 {
+    font-size: 32px;
+    color: #141e30;
+    margin-bottom: 15px;
+}
+
+.references-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Reference List */
+.references-list {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.references-list li {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.references-list li:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.references-list li a {
+    text-decoration: none;
+    color: #0f2027;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.references-list li a:hover {
+    color: #00c6ff;
+}
